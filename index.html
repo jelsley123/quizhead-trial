@@ -84,7 +84,7 @@ section{padding:110px 24px}
 .logo-chip:hover{border-color:var(--orange);color:white}
 .pricing-section{background:var(--dark);position:relative;overflow:hidden}
 .pricing-section::after{content:'$$$';position:absolute;left:-60px;bottom:-60px;font-family:'Bebas Neue',sans-serif;font-size:380px;color:rgba(255,255,255,.012);line-height:1;pointer-events:none}
-.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:0;max-width:900px}
+.pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .pricing-card{background:var(--card);border:2px solid rgba(255,255,255,.06);padding:36px 28px;position:relative;transition:all .2s;display:flex;flex-direction:column}
 .pricing-card:hover{border-color:rgba(232,98,42,.35);transform:translateY(-6px)}
 .pricing-card.featured{border-color:var(--orange);background:linear-gradient(145deg,#231008,#1e1e1e)}
@@ -93,7 +93,7 @@ section{padding:110px 24px}
 .plan-price{font-family:'Bebas Neue',sans-serif;font-size:64px;line-height:1;margin-bottom:2px}
 .plan-price sup{font-family:'Barlow',sans-serif;font-size:22px;font-weight:900;vertical-align:top;margin-top:10px;display:inline-block}
 .plan-period{font-size:11px;color:var(--grey);margin-bottom:4px;font-weight:700;text-transform:uppercase;letter-spacing:1px}
-.plan-gst{font-size:11px;color:rgba(255,255,255,.3);margin-bottom:24px;font-style:italic}
+.plan-currency{font-size:11px;color:rgba(255,255,255,.3);margin-bottom:24px;font-style:italic}
 .plan-features{list-style:none;margin-bottom:24px;flex:1}
 .plan-features li{font-size:14px;color:rgba(255,255,255,.6);padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;align-items:flex-start;gap:10px}
 .plan-features li::before{content:'\2713';color:var(--orange);font-weight:900;font-size:14px;flex-shrink:0;margin-top:1px}
@@ -154,15 +154,15 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.04);padding:36p
  <span class="ticker-item">4 WEEKS FREE</span><span class="ticker-item dot">&#9670;</span>
  <span class="ticker-item">NO EXPENSIVE HOSTS</span><span class="ticker-item dot">&#9670;</span>
  <span class="ticker-item">FRESH QUESTIONS EVERY WEEK</span><span class="ticker-item dot">&#9670;</span>
- <span class="ticker-item">PACK THE BAR</span><span class="ticker-item dot">&#9670;</span>
+ <span class="ticker-item">PACK THE HOUSE</span><span class="ticker-item dot">&#9670;</span>
  <span class="ticker-item">CANCEL ANYTIME</span><span class="ticker-item dot">&#9670;</span>
- <span class="ticker-item">100s OF BARS TRUST US</span><span class="ticker-item dot">&#9670;</span>
+ <span class="ticker-item">100s OF VENUES TRUST US</span><span class="ticker-item dot">&#9670;</span>
  <span class="ticker-item">4 WEEKS FREE</span><span class="ticker-item dot">&#9670;</span>
  <span class="ticker-item">NO EXPENSIVE HOSTS</span><span class="ticker-item dot">&#9670;</span>
  <span class="ticker-item">FRESH QUESTIONS EVERY WEEK</span><span class="ticker-item dot">&#9670;</span>
- <span class="ticker-item">PACK THE BAR</span><span class="ticker-item dot">&#9670;</span>
+ <span class="ticker-item">PACK THE HOUSE</span><span class="ticker-item dot">&#9670;</span>
  <span class="ticker-item">CANCEL ANYTIME</span><span class="ticker-item dot">&#9670;</span>
- <span class="ticker-item">100s OF BARS TRUST US</span><span class="ticker-item dot">&#9670;</span>
+ <span class="ticker-item">100s OF VENUES TRUST US</span><span class="ticker-item dot">&#9670;</span>
  </div>
 </div>
 <nav>
@@ -177,16 +177,16 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.04);padding:36p
  <div class="hero-content">
  <div class="hero-badge"><span class="pulse"></span>LIMITED TIME &mdash; 4 WEEKS FREE</div>
  <h1><span class="line1">RUN TRIVIA.</span><span class="line2">Pack The Bar.</span><span class="line3">Keep Every Dollar.</span></h1>
- <p class="hero-sub">Weekly bar quiz packs. Every Monday morning.<br><strong>Fresh. Fact-checked. Ready to run in 60 seconds.</strong><br>No host fees. No hassle. Just packed bars and happy regulars.</p>
+ <p class="hero-sub">Weekly pub quiz packs. Every Monday morning.<br><strong>Fresh. Fact-checked. Ready to run in 60 seconds.</strong><br>No host fees. No hassle. Just packed venues and fired-up regulars.</p>
  <div class="hero-ctas">
  <a href="#signup" class="btn-mega">Claim 4 Weeks Free &#8594;</a>
  <a href="#how-it-works" class="btn-ghost">See How It Works</a>
  </div>
- <p class="hero-note">No lock-in &nbsp;&middot;&nbsp; Cancel anytime &nbsp;&middot;&nbsp; Trusted by 100s of bars across the USA</p>
+ <p class="hero-note">No lock-in &nbsp;&middot;&nbsp; Cancel anytime &nbsp;&middot;&nbsp; Trusted by 100s of venues across the USA</p>
  </div>
 </section>
 <div class="stats-strip">
- <div class="stat"><span class="stat-num">100+</span><div class="stat-label">Active Bars</div></div>
+ <div class="stat"><span class="stat-num">100+</span><div class="stat-label">Active Venues</div></div>
  <div class="stat"><span class="stat-num">4</span><div class="stat-label">Weeks Free</div></div>
  <div class="stat"><span class="stat-num">52</span><div class="stat-label">Fresh Packs / Year</div></div>
  <div class="stat"><span class="stat-num">$0</span><div class="stat-label">Host Fees</div></div>
@@ -197,40 +197,40 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.04);padding:36p
  <div class="sec-title">Four Steps.<br>That's It.</div>
  <div class="steps">
  <div class="step"><div class="step-circle">1</div><h3>Sign Up Free</h3><p>4 weeks on us. Card saved, nothing charged until week 5. Cancel before then &mdash; you pay absolutely nothing.</p></div>
- <div class="step"><div class="step-circle">2</div><h3>Get Pack Monday</h3><p>Every Monday a fresh trivia pack hits your inbox. Pop culture, sports, current events &mdash; your crowd will love it.</p></div>
+ <div class="step"><div class="step-circle">2</div><h3>Get Pack Monday</h3><p>Every Monday a fresh trivia pack hits your inbox. Current events, pop culture, sport &mdash; your crowd will love it.</p></div>
  <div class="step"><div class="step-circle">3</div><h3>Click &amp; Run</h3><p>Open the slides, plug in the screen. Your staff host it. Zero prep. Professional every single time.</p></div>
- <div class="step"><div class="step-circle">4</div><h3>Watch It Grow</h3><p>Regulars lock in trivia night. Spend goes up. Slow Tuesday becomes your best night of the week.</p></div>
+ <div class="step"><div class="step-circle">4</div><h3>Watch It Grow</h3><p>Regulars lock in trivia night. Spend goes up. Quiet Tuesday becomes your best trading night of the week.</p></div>
  </div>
  </div>
 </section>
 <section class="features-section">
  <div class="container">
  <div class="features-header">
- <div><div class="eyebrow">Why TheQuizHead</div><div class="sec-title">Everything<br>You Need.</div></div>
- <div class="features-intro">TheQuizHead is the only bar quiz platform <strong>built exclusively for bar and restaurant owners</strong> &mdash; not trivia nerds, not expensive hosts. Fill seats, grow spend, and make trivia night your best night of the week.</div>
+ <div><div class="eyebrow">Why The Quiz Head</div><div class="sec-title">Everything<br>You Need.</div></div>
+ <div class="features-intro">The Quiz Head is the only pub quiz platform <strong>built exclusively for bar and venue owners</strong> &mdash; not trivia nerds, not quiz hosts. Fill seats, grow spend, and make trivia night your best night of the week.</div>
  </div>
  <div class="features-grid">
- <div class="feature-card"><span class="feature-emoji">&#9997;&#65039;</span><h3>Written Fresh Weekly</h3><p>Never a stale question bank. Every pack written fresh with current news, sports, and pop culture your crowd cares about.</p></div>
+ <div class="feature-card"><span class="feature-emoji">&#9997;&#65039;</span><h3>Written Fresh Weekly</h3><p>Never a stale question bank. Every pack written fresh with current US news and events your crowd actually cares about.</p></div>
  <div class="feature-card"><span class="feature-emoji">&#9989;</span><h3>Fact Checked</h3><p>Professionally proofread before it hits your inbox. Zero embarrassing errors on the night.</p></div>
- <div class="feature-card"><span class="feature-emoji">&#128176;</span><h3>No Host Fees</h3><p>Stop paying a trivia host $200+ per night. Your staff run it. You pocket every dollar of difference.</p></div>
- <div class="feature-card"><span class="feature-emoji">&#9889;</span><h3>60 Second Setup</h3><p>Fully designed PowerPoint slides. Open, plug in, go. No formatting, no setup, no wasted time.</p></div>
- <div class="feature-card"><span class="feature-emoji">&#128140;</span><h3>Monday Delivery</h3><p>New pack every Monday without fail. Download direct or via email. Always there when you need it.</p></div>
- <div class="feature-card"><span class="feature-emoji">&#128200;</span><h3>Grows Revenue</h3><p>Trivia drives repeat visits, longer stays, and higher tabs. Pays for itself in the very first session.</p></div>
+ <div class="feature-card"><span class="feature-emoji">&#128176;</span><h3>No Host Fees</h3><p>Stop paying an external host hundreds per night. Your staff run it. You pocket the difference every single week.</p></div>
+ <div class="feature-card"><span class="feature-emoji">&#9889;</span><h3>60 Second Setup</h3><p>Fully designed PowerPoint slides. Open, plug in, go. No formatting, no setup, no wasted hours.</p></div>
+ <div class="feature-card"><span class="feature-emoji">&#128140;</span><h3>Monday Delivery</h3><p>New pack and password every Monday without fail. Download direct or via email. Always there when you need it.</p></div>
+ <div class="feature-card"><span class="feature-emoji">&#128200;</span><h3>Grows Revenue</h3><p>Trivia drives repeat visits, longer dwell time, and higher tabs. Pays for itself in the very first session.</p></div>
  </div>
  </div>
 </section>
 <div class="callout">
  <div class="callout-text">"Stop paying someone else to entertain your customers. Run it yourself and keep every dollar."</div>
- <div class="callout-attr">&mdash; The QuizHead Philosophy</div>
+ <div class="callout-attr">&mdash; The Quiz Head Philosophy</div>
 </div>
 <div class="proof-section">
- <div class="proof-label">Trusted by bars and restaurants across the USA</div>
+ <div class="proof-label">Trusted by venues across the USA &amp; Australia</div>
  <div class="logos-row">
- <div class="logo-chip">Murphy's Bar &amp; Grill</div>
- <div class="logo-chip">The Tap Room</div>
- <div class="logo-chip">Cornerstone Tavern</div>
- <div class="logo-chip">The Local Pub</div>
- <div class="logo-chip">Harborview Bar</div>
+ <div class="logo-chip">Sports Bars</div>
+ <div class="logo-chip">Craft Beer Bars</div>
+ <div class="logo-chip">Irish Pubs</div>
+ <div class="logo-chip">Hotel Bars</div>
+ <div class="logo-chip">Restaurants</div>
  <div class="logo-chip">+ 100s More</div>
  </div>
 </div>
@@ -241,27 +241,35 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.04);padding:36p
  <div class="pricing-grid">
  <div class="pricing-card">
  <div class="plan-name">Weekly Gold</div>
- <div class="plan-price"><sup>$</sup>24.95</div>
- <div class="plan-period">Per week</div>
- <div class="plan-gst">After free trial</div>
- <ul class="plan-features"><li>Weekly Trivia Pack</li><li>50+ Questions</li><li>Music Round</li><li>Picture Round</li><li>Free Promo Material</li><li>Full Support</li><li>Cancel anytime</li></ul>
+ <div class="plan-price"><sup>$</sup>19.95</div>
+ <div class="plan-period">Per week USD</div>
+ <div class="plan-currency">After free trial</div>
+ <ul class="plan-features"><li>Weekly Trivia Pack</li><li>50+ Trivia Questions</li><li>Music Round</li><li>Picture Round</li><li>Free Posters &amp; Marketing Material</li><li>Full Support</li><li>Cancel anytime</li></ul>
  <a href="#signup" class="plan-cta outline">Start Free Trial</a>
  </div>
  <div class="pricing-card featured">
  <div class="pricing-badge">Most Popular</div>
  <div class="plan-name">Weekly Platinum</div>
- <div class="plan-price"><sup>$</sup>29.95</div>
- <div class="plan-period">Per week</div>
- <div class="plan-gst">After free trial</div>
- <ul class="plan-features"><li>All Gold Features</li><li>PowerPoint Show</li><li>Personalized Poster</li><li>Free Promo Material</li><li>Full Support</li><li>Cancel anytime</li></ul>
+ <div class="plan-price"><sup>$</sup>24.95</div>
+ <div class="plan-period">Per week USD</div>
+ <div class="plan-currency">After free trial</div>
+ <ul class="plan-features"><li>All Gold Features</li><li>PowerPoint Show</li><li>Personalised Branding</li><li>Free Posters &amp; Marketing Material</li><li>Full Support</li><li>Cancel anytime</li></ul>
  <a href="#signup" class="plan-cta primary">Start Free Trial &#8594;</a>
  </div>
  <div class="pricing-card">
+ <div class="plan-name">Biweekly</div>
+ <div class="plan-price"><sup>$</sup>24.95</div>
+ <div class="plan-period">Biweekly USD</div>
+ <div class="plan-currency">After free trial</div>
+ <ul class="plan-features"><li>Latest Trivia Pack</li><li>50+ Trivia Questions</li><li>Music Round</li><li>Picture Round</li><li>Free Posters &amp; Marketing Material</li><li>Full Support</li><li>Cancel anytime</li></ul>
+ <a href="#signup" class="plan-cta outline">Start Free Trial</a>
+ </div>
+ <div class="pricing-card">
  <div class="plan-name">Monthly</div>
- <div class="plan-price"><sup>$</sup>29.95</div>
- <div class="plan-period">Per month</div>
- <div class="plan-gst">After free trial</div>
- <ul class="plan-features"><li>Monthly Trivia Pack</li><li>50+ Questions</li><li>Music Round</li><li>Picture Round</li><li>PowerPoint Show</li><li>Full Support</li><li>Cancel anytime</li></ul>
+ <div class="plan-price"><sup>$</sup>24.95</div>
+ <div class="plan-period">Per month USD</div>
+ <div class="plan-currency">After free trial</div>
+ <ul class="plan-features"><li>Monthly Trivia Pack</li><li>50+ Trivia Questions</li><li>Music Round</li><li>Picture Round</li><li>Free Posters &amp; Marketing Material</li><li>Full Support</li><li>Cancel anytime</li></ul>
  <a href="#signup" class="plan-cta outline">Start Free Trial</a>
  </div>
  </div>
@@ -292,28 +300,29 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.04);padding:36p
  </div>
  <div id="formArea">
  <form class="form-body" id="trialForm">
- <div class="form-group"><label>Bar / Restaurant Name</label><input type="text" name="venue" placeholder="Murphy's Bar &amp; Grill" required></div>
+ <div class="form-group"><label>Venue Name</label><input type="text" name="venue" placeholder="The Local Bar &amp; Grill" required></div>
  <div class="form-row">
  <div class="form-group"><label>Your Name</label><input type="text" name="name" placeholder="John Smith" required></div>
  <div class="form-group"><label>Your Role</label><input type="text" name="role" placeholder="Bar Manager"></div>
  </div>
  <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="john@yourbar.com" required></div>
- <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="+1 (555) 000-0000"></div>
+ <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="+1 555 000 0000"></div>
  <div class="form-group">
  <label>Which Plan?</label>
  <select name="plan">
- <option value="gold">Weekly Gold &mdash; $24.95/week</option>
- <option value="platinum" selected>Weekly Platinum &mdash; $29.95/week &#11088;</option>
- <option value="monthly">Monthly &mdash; $29.95/month</option>
+ <option value="gold">Weekly Gold &mdash; $19.95/w USD</option>
+ <option value="platinum" selected>Weekly Platinum &mdash; $24.95/w USD &#11088;</option>
+ <option value="biweekly">Biweekly &mdash; $24.95 USD</option>
+ <option value="monthly">Monthly &mdash; $24.95/m USD</option>
  </select>
  </div>
  <button type="submit" class="submit-btn">START MY FREE TRIAL &#8594;</button>
- <p class="form-fine">Card saved, not charged for 4 weeks. Cancel before week 5 &mdash; pay nothing. Ever.</p>
+ <p class="form-fine">Card saved, not charged for 4 weeks. Cancel before week 5 &mdash; pay nothing. Ever. Prices in USD.</p>
  </form>
  <div class="success-screen" id="successMsg">
  <div class="big-emoji">&#127881;</div>
  <h3>YOU'RE IN!</h3>
- <p>Welcome to TheQuizHead!<br>Your first pack lands this Monday morning.<br><br>Check your email for confirmation.</p>
+ <p>Welcome to The Quiz Head!<br>Your first pack lands this Monday morning.<br><br>Check your email for confirmation.</p>
  </div>
  </div>
  </div>
@@ -322,10 +331,10 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.04);padding:36p
 </section>
 <footer>
  <div class="footer-logo">The Quiz<span>Head</span> &#127482;&#127480;</div>
- <div class="footer-copy">&copy; 2026 TheQuizHead. All rights reserved.</div>
+ <div class="footer-copy">&copy; 2026 The Quiz Head. All rights reserved. Prices in USD.</div>
  <div class="footer-links">
  <a href="https://thequizhead.com">Main Site</a>
- <a href="mailto:thequizhead@gmail.com">Contact</a>
+ <a href="https://thequizhead.com/contact">Contact</a>
  <a href="https://thequizhead.com/privacy">Privacy</a>
  </div>
 </footer>
@@ -336,7 +345,7 @@ document.getElementById('trialForm').addEventListener('submit', function(e) {
  btn.textContent = 'LOCKING YOU IN...';
  btn.disabled = true;
  var data = Object.fromEntries(new FormData(this).entries());
- fetch('https://api.telegram.org/bot8313860730:AAHfdY5rS7BBZlmgZLc0drKpJcJQFhyCGak/sendMessage',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:'8024684558',text:'🎯 NEW US TRIAL SIGNUP!\n\nBar: '+(data.venue||'?')+'\nName: '+(data.name||'?')+'\nEmail: '+(data.email||'?')+'\nPhone: '+(data.phone||'?')+'\nPlan: '+(data.plan||'?')})}).catch(function(){});
+ fetch('https://api.telegram.org/bot8313860730:AAHfdY5rS7BBZlmgZLc0drKpJcJQFhyCGak/sendMessage',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:'8024684558',text:'🎯 NEW US TRIAL SIGNUP!\n\nVenue: '+(data.venue||'?')+'\nName: '+(data.name||'?')+'\nEmail: '+(data.email||'?')+'\nPhone: '+(data.phone||'?')+'\nPlan: '+(data.plan||'?')})}).catch(function(){});
  document.getElementById('trialForm').style.display='none';
  document.getElementById('successMsg').style.display='block';
  setTimeout(function(){window.location.href='https://form.jotform.com/221177826836868?venueName='+encodeURIComponent(data.venue||'')+'&fullName='+encodeURIComponent(data.name||'')+'&email='+encodeURIComponent(data.email||'')+'&phone='+encodeURIComponent(data.phone||'');},2500);
